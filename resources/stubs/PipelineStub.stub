@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Http\Pipelines\{{name}};
+
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Routing\Pipeline;
+
+class {{name}}Pipeline extends Pipeline {
+
+    protected function pipes():array
+    {
+        return [
+            //
+        ];
+    }
+
+    public static function make(Builder $builder): Builder
+    {
+        return app(static::class)
+            ->send($builder)
+            ->thenReturn();
+    }
+
+}

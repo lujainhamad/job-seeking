@@ -1,0 +1,17 @@
+<?php
+    
+namespace App\Services;
+
+{{modelUse}}
+{{pipelineUse}}
+
+class {{ServiceName}} extends BaseService {
+
+
+    public function __construct()
+    {
+        {{model}}
+        {{pipeline}}
+    }
+
+}

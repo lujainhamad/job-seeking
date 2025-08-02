@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Http\Pipelines\{{Pipeline}}\Filters;
+
+use Closure;
+use Illuminate\Database\Eloquent\Builder;
+
+class {{FilterName}}{
+
+    public function handle(Builder $builder, Closure $next)
+    {
+        //
+        return $next($builder);
+    }
+}
